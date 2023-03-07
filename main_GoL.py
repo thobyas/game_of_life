@@ -9,8 +9,8 @@ def main():
             if isinstance(b_heigth, int):
                 break
         
-    tablero = board_state.random_state(b_width,b_heigth)
-    print(tablero)
+    board = board_state.random_state(b_width,b_heigth)
+    print(board)
 
 if __name__ == "__main__":
     main()
