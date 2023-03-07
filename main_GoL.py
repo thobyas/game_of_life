@@ -10,7 +10,8 @@ def main():
                 break
         
     board = board_state.random_state(b_width,b_heigth)
-    print(board)
+    for i in range(b_heigth):
+        print(*board[i][:])
 
 if __name__ == "__main__":
     main()
