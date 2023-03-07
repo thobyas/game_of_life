@@ -1,15 +1,15 @@
 #b_width : board width
 #b_height : board height
 
+
+import numpy as np
 import random
 
 
 def random_state(b_width = int, b_height = int):
-    board = []
-    for i in range(b_width):
-        board.append(random.randint(0,1))
-        for j in range(b_height):
-            pass
+    board = np.random.randint(0,2,size=(b_height,b_width))
+    return board
+    
 
        
 
