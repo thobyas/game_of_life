@@ -9,14 +9,9 @@ def main():
             if isinstance(b_heigth, int):
                 break
         
-    board = board_state.random_state(b_width,b_heigth)
-    old = board[1]
-    next = board[0]
+    board = board_state.random_state(b_width,b_heigth)  
     for i in range(b_heigth):
-       print(*old[i][:])
-    print("mmmm")
-    for i in range(b_heigth):
-       print(*next[i][:])
+       print(*board[i][:])
 
 if __name__ == "__main__":
     main()

@@ -9,8 +9,8 @@ import random
 def random_state(b_width = int, b_height = int):
     board = np.random.randint(0,2,size=(b_height,b_width)) #inicializo con eltablero con los estados    
     new_board = next_board_state(board)
-    #new_board = render(board)
-    return new_board, board
+    new_board = render(board)
+    return new_board
     
 
 def render(board):
