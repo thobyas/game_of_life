@@ -23,7 +23,7 @@ def render(board):
             if board[i,j] == 0:
                 rows_val.append(" ")
             else:
-                rows_val.append("#")
+                rows_val.append(">")
         render_board.append(rows_val) 
 
     return render_board    
